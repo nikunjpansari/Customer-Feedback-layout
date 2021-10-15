@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CUSTOMER FEEDBACK FORM</title>
+	<script src="formvalidation.js"></script>
+	<script>
+	required.add('Name','NOT_EMPTY','Name');
+	required.add('Email','EMAIL','Email');
+	required.add('Subject','NOT_EMPTY','Subject');
+	required.add('Message','NOT_EMPTY','Message');
+	
+	function checkMessageCount() {
+		var maxlen = 800;
+		var len = document.getElementById('Message').value.length;
+		document.getElementById('charsleft').innerHTML = 'You have ' + (maxlen - len) + ' characters remaining';
+	}
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	</head>
+	<body>
+	
+	<div class="navbar">
+  <a href="http://indianmistry.com/index.php">Home</a>
+  <a href="http://indianmistry.com/contact.php">Contact Us</a>
+  <div class="dropdown">
+    <button class="dropbtn">Services
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="http://indianmistry.com/service.php">Get Service</a>
+      <a href="http://indianmistry.com/service_charges.php">Service-Charge</a>
+    </div>
+  </div> 
+</div>
+<div class="feedback"><div class="feedback-default">
+<form accept-charset="utf-8" name="feedbackform" method="post" onsubmit="return validate.check(this)">
+<form accept-charset="utf-8" name="feedbackform" method="post" onsubmit="return validate.check(this)">
+<table border="0" align="center">
+<tr>
+ <td colspan="2">
+  <h2 align="center">Customer feedback form</h2>
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="Name">Name<span class="required_star"> * </span></label>
+ </td>
+ <td valign="top">
+  <input class="feedback_text" type="text" name="Name" id="Name" maxlength="100" />
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="Email">Email<span class="required_star"> * </span></label>
+ </td>
+ <td valign="top">
+  <input class="feedback_textbig" type="text" name="Email" id="Email" maxlength="100" />
+ </td>
+</tr>
+ <td valign="top">
+  <label for="Subject">Subject<span class="required_star"> * </span></label>
+ </td>
+ <td valign="top">
+  <input class="feedback_text" type="text" name="Subject" id="Subject" maxlength="50" />
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="Message">Message<span class="required_star"> * </span></label>
+ </td>
+ <td valign="top">
+  <textarea class="feedback_textarea" name="Message" id="Message" maxlength="1000" onKeyUp="checkMessageCount()" /></textarea>
+  <br />
+ </td>
+</tr>
+<tr>
+ <td colspan="2" align="center">
+  <br /><br />
+  <input type="text" id="url" name="url" />
+  <input type="submit" action="http://indianmistry.com/index.php" value="Submit Feedback" id="form_submit_button" class="feedback_button" />
+  <br /><br />
+  
+  <br /><br />
+ </td>
+</tr>
+</table>
+</form>
+</div></div>
+<div class="txt-center">
+    <form>
+        <center><div class="rating">
+            <input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
+            <label for="star5">☆</label>
+            <input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
+            <label for="star4">☆</label>
+            <input id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
+            <label for="star3">☆</label>
+            <input id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
+            <label for="star2">☆</label>
+            <input id="star1" name="star" type="radio" value="1" class="radio-btn hide" />
+            <label for="star1">☆</label>
+            <div class="clear">
+			</div>
+        </div>
+		</center>
+    </form>
+</div>
+  
+</body>
+</html>

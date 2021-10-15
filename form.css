@@ -1,0 +1,221 @@
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.feedbackform {
+width: 460px;
+font-family: Arial, Helvetica, sans-serif;
+border: 1px solid #AAA;
+padding:10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+}
+
+
+.feedbackformheader {
+text-align: center;
+font-size:48px;
+font-weight:bold;
+padding-top:10px;
+padding-bottom:10px;
+text-align:center;
+}
+.feedbackformmessage {
+text-align:center;
+padding-bottom:10px;
+}
+.feedbackform td {
+padding:4px;
+font-size:12px;
+}
+.feedbackform p {
+padding:4px;
+text-decoration: underline;
+text-decoration-color: red;
+}
+.feedbackform label {
+padding:4px;
+}
+.feedbackform label {
+padding-right:10px
+}
+.required {
+font-weight:bold;
+}
+.required_star {
+font-weight:bold;
+color:#F00;
+}
+.not-required {
+font-weight:normal
+}
+.feedback h2 {
+    font-size:18px;
+    line-height:22px;
+    border-bottom:1px solid #000;
+    margin-bottom:11px;
+    padding-bottom:4px;
+}
+.feedback td, 
+.feedback p, 
+.feedback label, 
+.feedback input
+.feedback textarea{
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;;
+}
+.feedback td{
+    padding: 4px;
+}
+.feedback p{
+    margin-bottom:10px;
+}
+
+div.feedback-default {
+    padding:20px;   
+    font-family: Arial, Helvetica, sans-serif;;
+}
+div.feedback-default h2 {
+    border-bottom:1px solid #BBB;
+}
+.feedback_text{
+	width:220px;
+	height:18px;
+	border:1px solid #BBB;
+}
+.feedback_textbig{
+	width:320px;
+	height:18px;
+	border:1px solid #BBB;
+}
+.feedback_textarea{
+	width:320px;
+	height:220px;
+	border:1px solid #BBB;
+}
+.feedback_button{
+	text-align: center;
+	font-size:14px;
+	font-weight:bold;
+	width:200px;
+	height:40px;
+	background-color: #4CAF50;
+	overflow: visible;
+-webkit-appearance: button;
+  cursor: pointer;
+}
+.feedback_required{
+	color:#F00
+}
+#url {
+	display:none
+}
+.feedback_comments {
+ color: #009;
+}
+
+.txt-center {
+    text-align: center;
+	font-size:16px;
+}
+.hide {
+    display: none;
+}
+
+.clear {
+    float: none;
+    clear: both;
+}
+
+.rating {
+    width: 90px;
+	text-align:center;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+}
+
+.rating > label {
+    float: right;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 1.1em;
+    cursor: pointer;
+    color: #000;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+    color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+}
